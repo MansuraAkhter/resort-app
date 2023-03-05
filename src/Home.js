@@ -27,7 +27,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div className="home-background">
       <div className="home">
         <img src={background} alt="resort" width="100%" height="625vh" />
         <Button
@@ -43,7 +43,12 @@ const Home = () => {
       </div>
 
       <Container>
-        <Typography>Reserve Your Stay</Typography>
+        <Typography
+          color="#1976d2"
+          sx={{ textAlign: "center", fontSize: "30px" }}
+        >
+          Reserve Your Stay
+        </Typography>
         <Container sx={{ display: "flex", justifycontent: "center" }}>
           <FormControl fullWidth>
             <InputLabel id="select-package">Package</InputLabel>
